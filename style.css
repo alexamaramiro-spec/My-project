@@ -1,0 +1,330 @@
+*{
+   text-decoration: none;
+   outline: none;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'sans-serif';
+   color: #737373
+}
+
+
+.container{
+   display: flex;
+   background-color: white;
+   height: 140vh;
+   padding: 15px;
+   /* gap: 10px; */
+
+}
+
+.container .box-1{
+   width: 50%;
+   height: 50%;
+   margin-top: 250px;
+   left: 250px;
+   right: 250px;
+   display: flex;
+   flex-direction: column;
+   background-color:white;
+   align-items: center;
+   justify-content:center;
+   color: #979696;
+   
+}
+
+.container .box-2{
+   width: 50%;
+   height: 100vh;
+   background: linear-gradient(rgb(184, 134, 11), white);
+   border-radius: 20px;
+   margin-top: 20px;
+}
+/* Phone size */
+@media screen and (max-width: 600px) {
+   .container{
+      flex-direction: column;
+      background:white
+   }
+
+   .container .box-1{
+      width: 100%;
+      height: 100%;
+      margin-top: 50px;
+    }
+
+    .container .box-2{
+        width: 0%;
+        height: 0%;
+    }
+}
+/* Tablet size */
+@media screen and (max-width: 768px) {
+    .container{
+      flex-direction: column;
+      background:white
+}
+    .container .box-1{
+      width: 100%;
+      height: 100%;
+      margin-top: 50px;
+   }
+
+   .container .box-2{
+        width: 0%;
+        height: 0%;
+    }
+
+   .container .box-3{
+
+   }
+
+}
+
+/* Sign-in page */
+
+.form{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   /* align-items: flex-start; */
+   gap: 30px;
+   outline: none;
+   /* border-color: #bebebe; */
+
+}
+
+.div-1, .div-2,.div-r1,.div-r2,.div-r3,.div-r4,.div-r5{
+   position: relative;
+    border: 1px solid rgb(55, 55, 12);
+    padding: 5px;
+    border-radius: 7px;
+    border-color: #bebebe;
+}
+
+.div-1 .label{
+   display: inline;
+   position: absolute;
+   top: 15px;
+   left: 15px;
+   background: white;
+   transition: 0.3s;
+}
+.div-1:hover .label{
+   transform: translateY(-25px)
+}
+
+
+.div-2 .label-2{
+   display: inline;
+   position: absolute;
+   top: 15px;
+   left: 15px;
+   background: white;
+   transition: 0.3s;
+}
+.div-2:hover .label-2{
+transform: translateY(-25px);
+}
+
+.div-r1 .label-r1{
+   display: inline;
+   position: absolute;
+   top: 15px;
+   left: 15px;
+   background: white;
+   transition: 0.2s;
+}
+.div-r1:hover .label-r1{
+   transform: translateY(-25px);
+}
+
+.div-r2 .label-r2{
+   display: inline;
+   position: absolute;
+   top: 15px;
+   left: 15px;
+   background: white;
+   transition: 0.3s;
+}
+.div-r2:hover .labe2-r1{
+   transform: translateY(-25px);
+}
+
+.div-r2 .label-r2{
+   display: inline;
+   position: absolute;
+   top: 15px;
+   left: 15px;
+   background: white;
+   transition: 0.3s;
+}
+.div-r2:hover .label-r2{
+   transform: translateY(-25px)
+}
+
+.div-r3 .label-r3{
+   display: inline;
+   position: absolute;
+   top: 15px;
+   left: 15px;
+   background: white;
+   transition: 0.3s;
+}
+.div-r3:hover .label-r3{
+   transform: translateY(-25px)
+}
+
+.div-r4 .label-r4{
+   display: inline;
+   position: absolute;
+   top: 15px;
+   left: 15px;
+   background: white;
+   transition: 0.3s;
+}
+.div-r4:hover .label-r4{
+   transform: translateY(-25px)
+}
+
+.div-r5 .label-r5{
+   display: inline;
+   position: absolute;
+   top: 15px;
+   left: 15px;
+   background: white;
+   transition: 0.3s;
+}
+.div-r5:hover .label-r5{
+   transform: translateY(-25px)
+}
+
+#email{
+   border: red;
+   border-radius: 5px;
+   width: 300px;
+   padding: 15px;
+}
+
+#password{
+   border-style: solid;
+   border: black;
+   border-radius: 5px;
+   width: 300px;
+   padding: 15px;
+}
+
+#username{
+   border-style: solid;
+   border: black;
+   border-radius: 5px;
+   width: 300px;
+   padding: 15px;
+}
+
+#phnumber{
+   border-style: solid;
+   border: black;
+   border-radius: 5px;
+   width: 300px;
+   padding: 15px;
+}
+
+#rc{
+   border-style: solid;
+   border: black;
+   border-radius: 5px;
+   width: 300px;
+   padding: 15px;
+}
+
+#password{
+   border-style: solid;
+   border: black;
+   border-radius: 5px;
+   width: 300px;
+   padding: 15px;
+}
+.reset{
+   display: flex;
+   flex-direction: row;
+   /* justify-content: space-between; */
+   gap: 5px;
+   align-items: center;  
+}
+
+.log{
+   display: flex;
+   flex-direction: column;
+   gap:30px;}
+
+button{
+   border: 1px solid rgb(90, 90, 30);
+   width: 520px;
+   border-radius: 30px;
+   padding: 13px;
+   background-color: #bebebe;
+   color: white;
+   outline: #dadada;
+}
+
+.reg{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   /* text-align: center; */
+   gap: 3px;
+   justify-content: center;
+   border: 1px solid #bebebe;
+   width: 500px;
+   border-radius: 50px;
+   padding: 13px;
+   background-color: transparent;
+   color: black;
+   color: #999797;
+}
+.reg:hover{
+    color: darkgoldenrod;
+    background-color:rgb(233, 203, 129);
+    cursor: pointer;
+}
+
+.d{
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 2px;
+justify-content: center;
+}
+.d .oasis{
+color: darkgoldenrod;
+font-style:solid;
+}
+
+/* Download css */
+.download{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 20px;
+    color: darkgoldenrod;
+}
+.download .andriod, .ios{
+    display: flex;
+    justify-content:center;
+    gap: 9px;
+    align-items: center;
+    border: 1px solid darkgoldenrod;
+    border-radius: 40px;
+    padding:1px 5px;
+    width: 220px;   
+}
+.andriod:hover{
+    background-color:rgb(233, 203, 129);
+    cursor: pointer;
+}
+.ios:hover{
+    background-color:rgb(233, 203, 129);
+    cursor: pointer;
+}
+/* End */
+
+/* Register page */
