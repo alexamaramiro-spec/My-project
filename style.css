@@ -17,8 +17,8 @@
 
 .container .box-1{
    width: 50%;
-   height: 50%;
-   margin-top: 230px;
+   height: 80%;
+   margin-top: 100px;
    left: 250px;
    right: 250px;
    display: flex;
@@ -36,6 +36,19 @@
    background: linear-gradient(rgb(184, 134, 11), rgb(224, 254, 222));
    border-radius: 20px;
    margin-top: 20px;
+}
+
+.container .box-3{
+   width: 200px;
+   margin-left: 50px;
+   height: 120vh;
+   background-color:darkgoldenrod;
+   border-radius: 30px;
+   margin-top: 20px;
+}
+
+.container .box-4{
+   width: ;
 }
 /* Phone size */
 @media screen and (max-width: 600px) {
@@ -72,10 +85,6 @@
         height: 0%;
     }
 
-   .container .box-3{
-
-   }
-
 }
 
 /* Sign-in page */
@@ -97,6 +106,7 @@
     padding: 5px;
     border-radius: 7px;
     border-color: #bebebe;
+    width: 500px;
 }
 
 .div-1 .label{
@@ -328,4 +338,23 @@ font-style:solid;
 }
 /* End */
 
-/* Register page */
+/* Terms and policy (div class="box-3") */
+
+.j{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: auto;
+   align-items: center;
+   /* gap: 10px; */
+}
+
+.c{
+   display: flex;
+   flex-direction: row;
+   width: 500px;
+   gap: 5px;
+   align-items: center;
+   justify-content: center;
+   
+}
