@@ -38,15 +38,6 @@
    margin-top: 20px;
 }
 
-.container .box-3{
-   width: 200px;
-   margin-left: 50px;
-   height: 120vh;
-   background-color:darkgoldenrod;
-   border-radius: 30px;
-   margin-top: 20px;
-}
-
 .container .box-4{
    width: ;
 }
@@ -357,4 +348,53 @@ font-style:solid;
    align-items: center;
    justify-content: center;
    
+}
+
+/* USER DASHBOARD */
+
+.userdashboard{
+   display: flex;
+   flex-direction: column;
+   grid-template-columns: repeat(6,1fr);
+   gap: 10px;
+   height: 140vh;
+   /* justify-content: space-around; */
+}
+
+.userdashboard .box-3{
+   width: auto;
+   height: 200px;
+   background-color:darkgoldenrod;
+   border-radius: 30px;
+   /* margin-top: 20px; */
+}
+
+.box-6{
+display: grid;
+flex-direction: column;
+width: auto;
+height: 700px;
+background: linear-gradient(rgb(245, 213, 132), rgb(123, 190, 119));
+border: 1px solid;
+border-radius: 30px;
+gap: 10px;
+}
+
+.list-1{
+   display: flex;
+   height: 100px;
+   width: 200px;
+   border: 1px solid rgb(56, 178, 25);
+   border-radius: 30px;
+   gap: 10px;
+   align-items: center;
+   padding: 20px;
+   justify-content: center;
+
+}
+
+li:hover{
+   background-color: darkgoldenrod;
+   color:white;
+   cursor: pointer;
 }
